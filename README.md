@@ -1,27 +1,73 @@
-# SystemTestAngularDocker
+# System Test Angular Docker
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.11.
+Projeto frontend desenvolvido com Angular e Bootstrap, containerizado com Docker.
 
-## Development server
+## 🚀 Tecnologias
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- [Angular 15](https://angular.io/)
+- [Bootstrap 5](https://getbootstrap.com/)
+- [Docker](https://www.docker.com/)
 
-## Code scaffolding
+## 📋 Pré-requisitos
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Node.js >= 16
+- NPM >= 8
+- Angular CLI >= 15
+- Docker (opcional)
 
-## Build
+## 💻 Como rodar localmente
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Clone o repositório:
+```bash
+git clone https://github.com/pbattistella/siystem-test-angular-docker.git
+cd siystem-test-angular-docker
+```
 
-## Running unit tests
+Instale as dependências:
+```bash
+npm install
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Rode o projeto:
+```bash
+ng serve
+```
 
-## Running end-to-end tests
+Acesse em: `http://localhost:4200`
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## 🐳 Como rodar com Docker
 
-## Further help
+Build da imagem:
+```bash
+docker build -t system-test-angular-docker .
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Rode o container:
+```bash
+docker run -p 4200:4200 system-test-angular-docker
+```
+
+Acesse em: `http://localhost:4200`
+
+## 📁 Estrutura do projeto
+```
+src/
+├── app/
+│   ├── app.component.ts
+│   ├── app.component.html
+│   ├── app.component.css
+│   └── app.module.ts
+├── assets/
+└── styles.css
+```
+
+## 📝 Funcionalidades
+
+- Formulário com campos de Nome, E-mail e Telefone
+- Binding de dados com ngModel
+- Estilização com Bootstrap
+
+## 👤 Autor
+
+**Paulo Battistella**  
+GitHub: [@pbattistella](https://github.com/pbattistella)
