@@ -1,0 +1,11 @@
+services:
+  angular:
+    build: .
+    container_name: system-test-angular
+    ports:
+      - "4200:4200"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      - CHOKIDAR_USEPOLLING=true
